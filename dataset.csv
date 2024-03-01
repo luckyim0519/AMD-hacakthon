@@ -1,0 +1,11 @@
+feature1 (performance 1-10),feature2 (cost-efficient),feature3 (design),label (positive or negative)
+6,efficient,good,positive
+2,not efficient,bad,negative
+4,efficient,good,positive
+6,not efficient,good,positive
+6,efficient,bad,positive
+4,not efficient,good,negative
+6,not efficient,bad,negative
+4,not efficient,bad,negative
+10,efficient,good,positive
+1,not efficient,bad,negative
