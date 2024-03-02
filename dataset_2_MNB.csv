@@ -1,0 +1,11 @@
+Review ,Rating (1-5),"label (positive, negative or neutral)"
+I love this product!,5,positive 
+"This is terrible, hated this product ",1,negative 
+It was okay,3,neutral 
+"Amazing experience, loved it!",4,positive 
+Amazing product,5,positive 
+Hated this product ,1,negative 
+Okay experience,2,neutral 
+Absolutely hated it ,1,negative 
+"It was okay, nothing fancy ",3,neutral 
+"Good product, amazing features",5,positive 
