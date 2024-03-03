@@ -9,16 +9,26 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 
 # Dummy data with labels 
-df = pd.read_csv('dataset_2_MNB.csv')
+# df = pd.read_csv('dataset_2.csv')
+# df_review = df.iloc[:,0]
+# df_label = df.iloc[:,2]
 
-df_review = df.iloc[:,0]
-df_label = df.iloc[:,2]
+# Real Data Set #2 
+df = pd.read_csv('consumer_reviews_amazon_datafiniti.csv')
+
+df_review = df.iloc[:,16]
+df_label = df.iloc[:,11]
+
+print("reviwers", df_review)
+
 
 # Data preprocessing 
 def preprocess_txt(text):
-   text = re.sub(r'[^a-zA-Z\s]', '', text)
-   text = text.lower()
-   return text
+  if not isinstance(text, str):
+    text = str(text)
+  text = re.sub(r'[^a-zA-Z\s]', '', text)
+  text = text.lower()
+  return text
 
 df_review = df_review.apply(preprocess_txt)
 
