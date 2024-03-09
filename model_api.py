@@ -38,11 +38,11 @@ def predict_sentiment():
     print(f"prediction", prediction)
 
     if(prediction[0] == 0): 
-       pred_out = "negative"
+       pred_out = "Negative"
     elif(prediction[0] == 1): 
-        pred_out = "positive"
+        pred_out = "Positive"
     else: 
-       pred_out = "unknown"
+       pred_out = "Unknown"
 
     # Return the prediction as JSON
     return jsonify({'sentiment': pred_out})
