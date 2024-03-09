@@ -21,7 +21,6 @@ df_label = df.iloc[:,11]
 
 print("reviwers", df_review)
 
-
 # Data preprocessing 
 def preprocess_txt(text):
   if not isinstance(text, str):

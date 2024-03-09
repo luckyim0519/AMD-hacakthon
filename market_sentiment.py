@@ -20,7 +20,7 @@ from sklearn.metrics import f1_score
 
 import pandas as pd
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('dataset_2_MNB.csv')
 
 df_perf = df.iloc[:,0]
 df_costEff = df.iloc[:,1]
