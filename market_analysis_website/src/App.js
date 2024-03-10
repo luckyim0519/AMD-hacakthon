@@ -7,15 +7,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { OutputBar } from './components/OutputBar';
 import { Graph } from './components/Graph'; 
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     
     <div className="App">
-      <Banner />
-      <Graph />
+      
       {/* <InputBar /> */}
+      <Banner />
       <OutputBar />
+      <Router>
+        
+        <Routes>
+        <Route path="/graph" element={<Graph />}></Route>
+        </Routes>
+      </Router>
 
     </div>
   );

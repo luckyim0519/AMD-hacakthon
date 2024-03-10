@@ -1,0 +1,45 @@
+/* InputBar.css */
+
+.input_div {
+    position: fixed;
+    top: 50%; /* Place the div at the vertical center */
+    left: 50%; /* Place the div at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the div */
+    z-index: 999; /* Ensure the div appears above other content */
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the input element */
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the submit button */
+  .submit-button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button button:hover {
+    background-color: #0056b3;
+  }
+  
