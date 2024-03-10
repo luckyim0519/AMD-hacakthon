@@ -35,7 +35,7 @@ export class Graph extends Component {
 
     const comboChart = (
       <Chart
-        width={'900px'}
+        width={'100vw'}
         height={'500px'}
         chartType="ComboChart"
         loader={<div>Loading Chart</div>}
@@ -62,7 +62,7 @@ export class Graph extends Component {
 
     const pieChart = (
       <Chart
-        width={'900px'}
+        width={'100vw'}
         height={'500px'}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
