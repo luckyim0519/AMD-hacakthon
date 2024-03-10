@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import { Chart } from 'react-google-charts';
+
 
 export class Graph extends Component {
   constructor(props) {
@@ -60,6 +61,7 @@ export class Graph extends Component {
       pieHole: 0.4
     };
 
+
     const pieChart = (
       <Chart
         width={'100vw'}
@@ -74,11 +76,44 @@ export class Graph extends Component {
     this.setState({ pieChartData: pieChart });
   }
 
+  
+
   render() {
     return (
       <div>
-        <div>{this.state.comboChartData}</div>
-        <div>{this.state.pieChartData}</div>
+        <div className='combochart'>{this.state.comboChartData}</div>
+        <div className='piechart'>{this.state.pieChartData}</div>
+        {/* Add GeoChart here */}
+        <div className='geochart'>
+        <div style={{ width: '100%', height: '500px' }}>
+          {/* Insert GeoChart component here */}
+          <Chart
+            width={'100vw'}
+            height={'500px'}
+            chartType="GeoChart"
+            
+            loader={<div>Loading Chart</div>}
+            data={[
+              ['Country', 'Popularity'],
+              ['Germany', 200],
+              ['United States', 300],
+              ['Brazil', 400],
+              ['Canada', 500],
+              ['France', 600],
+              ['RU', 700]
+            ]}
+            options={{
+              title: 'Popularity of Countries',
+              legend: 'none',
+              colorAxis: { colors: ['#e7711c', '#4374e0'] },
+              fontSize: 12,
+              fontName: 'Arial',
+              labels: 'both' // or 'none', 'in', 'out'
+            }}
+            rootProps={{ 'data-testid': '1' }}
+          />
+        </div>
+        </div>
       </div>
     );
   }

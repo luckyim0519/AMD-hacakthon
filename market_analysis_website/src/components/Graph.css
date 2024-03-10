@@ -13,4 +13,8 @@
     width: 700px; /* Set the width of the chart */
     height: 400px; /* Set the height of the chart */
   }
+
+  .geochart{
+    padding: 100px;
+  }
   
