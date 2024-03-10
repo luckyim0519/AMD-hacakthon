@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 export const InputBar = () => {
   // State to manage the user input
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState(null);
 
   // Handler function to update the state on user input change
   const handleInputChange = (e) => {

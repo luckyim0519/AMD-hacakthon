@@ -1,30 +1,24 @@
-import React, { useRef } from 'react';
-
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { OutputBar } from './components/OutputBar';
-import { Graph } from './components/Graph'; 
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Graph } from './components/Graph';
 
 function App() {
   return (
-    
-    <div className="App">
-      
-      {/* <InputBar /> */}
-      <Banner />
-      <OutputBar />
-      <Router>
-        
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Banner />
         <Routes>
-        <Route path="/graph" element={<Graph />}></Route>
+          <Route path="/" element={<OutputBar />} />
+          <Route path="/graph" element={<Graph />} />
         </Routes>
-      </Router>
-
-    </div>
+      </div>
+    </Router>
   );
 }
 
