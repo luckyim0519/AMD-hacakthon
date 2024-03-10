@@ -87,7 +87,8 @@ p.danger {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 240px 0 260px 0; /*padding: 260px 0 100px 0;*/
+  padding: 240px 0 260px 0; /*padding: 260px 0 100px 0;
+  /* padding: 15% 0 15% 0; /*padding: 260px 0 100px 0; */
   /*background-image: url('./assets/img/banner-bg.png');*/
   background-image: url('./assets/img/data-codes-graphs.jpg');
   background-position: top center;
@@ -182,6 +183,15 @@ p.danger {
   top: 30%; 
   left: 50%;  
   transform: translate(-50%, -50%);
+
+}
+
+.graph-container {
+  position: fixed;
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin-top: 60px; /* Adjust the top value as needed */
+  top: 10%; 
+  left: 50%;  
 
 }
 

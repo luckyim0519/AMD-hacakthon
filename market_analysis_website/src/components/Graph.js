@@ -14,8 +14,8 @@ export const Graph = () => {
 
     return (
         <div className="graph-container"> {/* Apply container styles */}
-            <PieChart className="pie-chart" width={700} height={700}> {/* Apply chart styles */}
-                <Pie data={data} dataKey="students" outerRadius={250} fill="green" />
+            <PieChart className="pie-chart" width={400} height={400}> {/* Apply chart styles */}
+                <Pie data={data} dataKey="students" outerRadius={150} fill="green" />
             </PieChart>
         </div>
     );

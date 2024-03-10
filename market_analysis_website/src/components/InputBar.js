@@ -1,11 +1,9 @@
-// InputBar.js
-
 import React, { useState } from 'react';
 
 
 export const InputBar = () => {
   // State to manage the user input
-  const [userInput, setUserInput] = useState(null);
+  const [userInput, setUserInput] = useState('');
 
   // Handler function to update the state on user input change
   const handleInputChange = (e) => {
@@ -22,23 +20,23 @@ export const InputBar = () => {
   };
 
   return (
-    <div className='input_div'>
-      <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
         {/* Input element for user input */}
-        <div className="input-container">
-          <input
+        <div className = "input-container">
+        <input
             type="text"
             value={userInput}
             onChange={handleInputChange}
             placeholder="Type something..."
-          />
+        />
         </div>
 
-        <div className="submit-button">
-          {/* Button to submit the form */}
-          <button type="submit">Submit</button>
+        <div className = "submit-button">
+            {/* Button to submit the form */}
+            <button type="submit">Submit</button>
         </div>
-      </form>
-    </div>
+        
+        </form>
   );
 };
+
