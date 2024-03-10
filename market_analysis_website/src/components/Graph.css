@@ -1,0 +1,16 @@
+/* graph.css */
+
+/* Style for the container of the pie chart */
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align items at the bottom of the container */
+    height: 100vh; /* Set the container height to full viewport height */
+  }
+  
+  /* Style for the pie chart */
+  .pie-chart {
+    width: 700px; /* Set the width of the chart */
+    height: 400px; /* Set the height of the chart */
+  }
+  
