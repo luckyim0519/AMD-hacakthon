@@ -14,14 +14,13 @@ function App() {
 
     <Router>
       <div className="App">
-        <NavBar />
+      
         <Banner />
         <Routes>
           <Route path="/" element={<>
             <OutputBar />
-            <Graph />
           </>} />
-          <Route path="/piechart" element={<Piechart /> } />
+          <Route path="/graph" element={<Graph /> } />
         </Routes>
 
 
