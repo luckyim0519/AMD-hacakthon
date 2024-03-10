@@ -5,7 +5,7 @@ import { Banner } from './components/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { OutputBar } from './components/OutputBar';
 import { Graph } from './components/Graph';
-
+import {Banner_graph} from './components/Banner_graph';
 
 function App() {
   return (
@@ -13,12 +13,16 @@ function App() {
     <Router>
       <div className="App">
       
-        <Banner />
+        
         <Routes>
           <Route path="/" element={<>
+            <Banner />
             <OutputBar />
           </>} />
-          <Route path="/graph" element={<Graph /> } />
+          <Route path="/graph" element={<>
+            <Banner_graph />
+            <Graph />
+          </>} />
         </Routes>
 
 

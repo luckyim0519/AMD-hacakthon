@@ -58,6 +58,8 @@ export const OutputBar = () => {
     };
 
     return (
+        
+
         <div className = "floating-box">
 
         <div className = "input-container">
