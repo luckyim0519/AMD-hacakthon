@@ -1,22 +1,40 @@
-// Graph.js
+import React, { Component } from 'react';
+import { Chart } from 'react-google-charts';
 
-import React from 'react';
-import { PieChart, Pie } from 'recharts';
+export class Graph extends Component {
+  componentDidMount() {
+    this.drawChart();
+  }
 
-
-export const Graph = () => {
-    // Sample data
+  drawChart() {
     const data = [
-        { name: 'Geeksforgeeks', students: 400 },
-        { name: 'Technical scripter', students: 700 }
-     
+      ['Feedback', 'Numbers'],
+      ['Positive', 11],
+      ['Negative', 2],
+      ['Neutral', 2],
+
     ];
 
-    return (
-        <div className="graph-container"> {/* Apply container styles */}
-            <PieChart className="pie-chart" width={700} height={700}> {/* Apply chart styles */}
-                <Pie data={data} dataKey="students" outerRadius={250} fill="green" />
-            </PieChart>
-        </div>
+    const options = {
+      title: 'Concluded Feedback of Market',
+      pieHole: 0.4
+    };
+
+    const chart = (
+      <Chart
+        width={'900px'}
+        height={'500px'}
+        chartType="PieChart"
+        loader={<div>Loading Chart</div>}
+        data={data}
+        options={options}
+      />
     );
-}
+
+    this.setState({ chart });
+  }
+
+  render() {
+    return <div>{this.state && this.state.chart}</div>;
+  }
+};
