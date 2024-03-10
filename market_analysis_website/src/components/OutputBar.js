@@ -25,7 +25,6 @@ export const OutputBar = () => {
             if (!response.ok) {
                 throw new Error('Failed to get prediction from the API');
             }
-
             const result = await response.json();
             setPrediction(result.sentiment);
             setUserInput('');

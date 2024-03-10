@@ -5,8 +5,7 @@
 .input-container {
     top: 50%; /* Place the div at the vertical center */
     left: 50%; /* Place the div at the horizontal center */
-    transform: translate(-50%, -50%); /* Center the div */
-    z-index: 999; /* Ensure the div appears above other content */
+    transform: translate(-50%, -60%); /* Center the div */
     width: 300px; /* Adjust width as needed */
     padding: 20px;
     background-color: #ffffff;
@@ -44,6 +43,6 @@
   
   /* Styling for the prediction output */
   .prediction-output {
-    margin-top: 40px; /* Add space between button and prediction output */
+    margin-top: 10px; /* Add space between button and prediction output */
   }
   

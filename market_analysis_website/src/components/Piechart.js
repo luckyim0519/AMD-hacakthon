@@ -2,10 +2,27 @@ import React, { Component } from 'react';
 import { Chart } from 'react-google-charts';
 
 export class Piechart extends Component {
+  parseCSVData(){
+    const labels = [];
+    const results = [];
+    filePath = '/Users/luckyim/Desktop/AMD_hackathon/datasets/graph.csv';
+    fs.createReadStream(filePath)
+      .pipe(csvParser())
+      .on('data', (row) => {
+        // Assuming 'label' and 'result' are the column names in the CSV file
+        labels.push(row.label);
+        results.push(row.result);
+      })
+      .on('end', () => {
+        // Print out the arrays after parsing
+        console.log('Labels:', labels);
+        console.log('Results:', results);
+      });
+  }
+
   componentDidMount() {
     this.drawChart();
   }
-
   drawChart() {
     const data = [
       ['Task', 'Hours per Day'],
