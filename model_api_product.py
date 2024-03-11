@@ -59,7 +59,7 @@ def predict_regression():
     prediction = svm_model.predict([[time, cost]])
 
     # Define the response message based on the prediction
-    result = "Project is worth doing." if prediction[0] == 1 else "Project is not worth doing."
+    result = "Green light! Project cost is worthwhile." if prediction[0] == 1 else "Red light! Project costs outweigh benefits. Reconsider this project scope."
 
     return jsonify({'result': result})
 

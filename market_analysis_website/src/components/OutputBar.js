@@ -5,6 +5,7 @@ import { PieChart, Pie, Cell, Tooltip} from 'recharts';
 
 export const OutputBar = () => {  
     const [userInput, setUserInput] = useState('')
+    const [summary, setSummary] = useState('')
     const [prediction, setPrediction] = useState(null)
     const [pieChartData, setPieChartData] = useState([]);
 
@@ -55,7 +56,7 @@ export const OutputBar = () => {
 
     return (
         <div className = "float-seg">
-          <h2>Sentiment Analyzer</h2>
+          <h1>SENTIMENT ANALYZER</h1>
           <textarea
             value={userInput}
             onChange={handleInputChange}
@@ -64,6 +65,11 @@ export const OutputBar = () => {
             <button onClick={handlePredictClick}>Predict Sentiment</button>
             
             <h4>Prediction:</h4>
+            {prediction && prediction.length > 0 && (
+              <div>
+                <h6>Positive sentiment outweighs negative sentiment!</h6>
+              </div>
+            )}
 
             <div className = "float-seg.graph">
             <PieChart className="pie-chart" width={200} height={200}> {/* Apply chart styles */}

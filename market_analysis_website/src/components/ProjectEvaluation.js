@@ -47,7 +47,7 @@ export const ProjectEvaluation = () => {
 
   return (
     <div className="float-seg-middle">
-      <h1>Submit Form</h1>
+      <h1>PROJECT EVALUATOR</h1>
       <form onSubmit={handleSubmit}>
         <label>Cost ($):</label>
         <input type="number" name="cost" value={formData.cost} onChange={handleChange} />
@@ -55,7 +55,7 @@ export const ProjectEvaluation = () => {
         <label>Time (days):</label>
         <input type="number" name="time" value={formData.time} onChange={handleChange} />
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit">Predict Feasibility</button>
       </form>
       <div className={result === "Project is worth doing." ? "green" : "red"}>
         {result && <p>{result}</p>}
