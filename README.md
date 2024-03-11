@@ -35,3 +35,8 @@ To test the sentiment analysis ML model:
 2. Click Predict Sentiment button to see model's classification
 
 Feel free to reach out if you have any questions or need further assistance!
+
+
+
+
+### website snapshot
