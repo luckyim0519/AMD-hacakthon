@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { OutputBar } from './components/OutputBar';
 import { Graph } from './components/Graph';
 import {Banner_graph} from './components/Banner_graph';
+import { ProjectEvaluation } from './components/ProjectEvaluation';
 
 function App() {
   return (
@@ -13,7 +14,6 @@ function App() {
     <Router>
       <div className="App">
       
-        
         <Routes>
           <Route path="/" element={<>
             <Banner />
@@ -22,6 +22,9 @@ function App() {
           <Route path="/graph" element={<>
             <Banner_graph />
             <Graph />
+          </>} />
+          <Route path="/project" element={<>
+            <ProjectEvaluation />
           </>} />
         </Routes>
 

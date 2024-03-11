@@ -1,0 +1,13 @@
+/* styles.css */
+.button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: white;
+    color: black;
+    border: 1px solid black; /* Add border for better visibility */
+    cursor: pointer; /* Add cursor pointer on hover */
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+  }
+  
