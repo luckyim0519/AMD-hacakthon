@@ -27,5 +27,11 @@ To run the ML server for API calls:
     ```bash
     python model_api_product.py
     ```
+## Website Use Case to Test Prediction Model 
+
+To test the sentiment analysis ML model: 
+
+1. Input 'amd processors' into prompt bar under Sentiment Analyzer
+2. Click Predict Sentiment button to see model's classification
 
 Feel free to reach out if you have any questions or need further assistance!
