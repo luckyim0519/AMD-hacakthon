@@ -84,3 +84,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 <img width="904" alt="스크린샷 2024-03-11 오전 10 52 40" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/f558a349-2082-4975-a6ef-c37313d9f0ee">
+
+
+
+### example of sentiment analyzer
+<img width="433" alt="image" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/e32b0d13-34e4-4bc1-a9ad-e25acf6acade">
+
+
+### example of project evaluator
+<img width="499" alt="image" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/4e2fc636-b4e5-4c49-b6be-299dd7ad09da">
