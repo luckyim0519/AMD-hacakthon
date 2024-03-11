@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Banner } from './components/Banner';
+import { NavBar } from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { OutputBar } from './components/OutputBar';
 import { Graph } from './components/Graph';
@@ -16,15 +17,17 @@ function App() {
       
         <Routes>
           <Route path="/" element={<>
-            <Banner />
+            <NavBar/>
             <OutputBar />
-          </>} />
-          <Route path="/graph" element={<>
-            <Banner_graph />
+            <ProjectEvaluation/>
             <Graph />
           </>} />
+          <Route path="/graph" element={<>
+            {/* <Banner_graph />
+            <Graph /> */}
+          </>} />
           <Route path="/project" element={<>
-            <ProjectEvaluation />
+            {/* <ProjectEvaluation /> */}
           </>} />
         </Routes>
 

@@ -46,13 +46,13 @@ export const ProjectEvaluation = () => {
   };
 
   return (
-    <div className="App">
+    <div className="float-seg-middle">
       <h1>Submit Form</h1>
       <form onSubmit={handleSubmit}>
-        <label>cost:</label>
+        <label>Cost ($):</label>
         <input type="number" name="cost" value={formData.cost} onChange={handleChange} />
         <br />
-        <label>time:</label>
+        <label>Time (days):</label>
         <input type="number" name="time" value={formData.time} onChange={handleChange} />
         <br />
         <button type="submit">Submit</button>

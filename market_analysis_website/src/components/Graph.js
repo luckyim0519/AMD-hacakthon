@@ -35,14 +35,14 @@ export class Graph extends Component {
     };
 
     const comboChart = (
-      <Chart
-        width={'100vw'}
-        height={'500px'}
-        chartType="ComboChart"
-        loader={<div>Loading Chart</div>}
-        data={comboData}
-        options={comboOptions}
-      />
+        <Chart
+          width={'100vw'}
+          height={'500px'}
+          chartType="ComboChart"
+          loader={<div>Loading Chart</div>}
+          data={comboData}
+          options={comboOptions}
+        />
     );
 
     this.setState({ comboChartData: comboChart });

@@ -13,10 +13,6 @@ export const OutputBar = () => {
         setPrediction("");
       };
 
-    useEffect(() => {
-      console.log('pieChartData:', pieChartData);
-    }, [pieChartData]); // Log pieChartData in the effect when it changes
-
     const handlePredictClick = async () => {
     try {
         const response = await fetch('http://127.0.0.1:5000/predict_sentiment', {
@@ -58,29 +54,29 @@ export const OutputBar = () => {
     };
 
     return (
-        
-
-        <div className = "floating-box">
-
-        <div className = "input-container">
+        <div className = "float-seg">
+          <h2>Sentiment Analyzer</h2>
           <textarea
             value={userInput}
             onChange={handleInputChange}
             placeholder="Enter your prompt..."
           />
             <button onClick={handlePredictClick}>Predict Sentiment</button>
-        </div>
-          {prediction !== null && (
+            
+            <h4>Prediction:</h4>
 
-            <div className = "prediction-output">
-              <h3>Prediction:</h3>
-              <h3>{""}</h3>
-            </div>
-          )}
-          <div className="graph-container"> {/* Apply container styles */}
-            <PieChart className="pie-chart" width={400} height={400}> {/* Apply chart styles */}
+            <div className = "float-seg.graph">
+            <PieChart className="pie-chart" width={200} height={200}> {/* Apply chart styles */}
                 {/* <Pie data={pieChartData} dataKey="value" outerRadius={150} fill="green" /> */}
-                <Pie data={pieChartData} dataKey="value" outerRadius={150} label fill="#8884d8" labelLine={false}>
+                <Pie 
+                data={pieChartData} 
+                dataKey="value" 
+                outerRadius={100} 
+                label fill="#8884d8" 
+                labelLine={false}
+                startAngle={90} // Adjust startAngle to create a 3D effect
+                endAngle={450} // Adjust endAngle to create a 3D effect
+                >
                 {pieChartData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.fill} />
                 ))}
@@ -88,8 +84,9 @@ export const OutputBar = () => {
                 <Tooltip formatter={(value) => `${value.toFixed(0)}%`} />
             </PieChart>
           </div>
-      </div>
-        
+          </div>
+          
+
       );
 
 }
