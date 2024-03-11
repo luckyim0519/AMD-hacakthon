@@ -39,4 +39,9 @@ Feel free to reach out if you have any questions or need further assistance!
 
 
 
-### website snapshot
+## website snapshot
+<img width="1512" alt="스크린샷 2024-03-11 오전 11 10 24" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/2dc40a68-b6c3-4d1d-b7af-e6f037f34323">
+
+<img width="1512" alt="스크린샷 2024-03-11 오전 11 10 29" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/f280f8fa-8425-4476-be70-798d28f92450">
+
+<img width="1512" alt="스크린샷 2024-03-11 오전 11 10 28" src="https://github.com/luckyim0519/AMD-hacakthon/assets/84313518/4d2ff370-5591-48cf-9fb2-25e818bafca1">
