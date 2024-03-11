@@ -49,6 +49,6 @@ Feel free to reach out if you have any questions or need further assistance!
 
 
 ## demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tRiakgsAlYo" frameborder="0" allowfullscreen></iframe>
-
+![Video](https://img.youtube.com/vi/tRiakgsAlYo/0.jpg)
+[Watch the video](https://www.youtube.com/watch?v=tRiakgsAlYo)
 
